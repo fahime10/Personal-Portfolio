@@ -27,7 +27,7 @@ nav a:hover {
     display: grid;
     background-color: rgb(196, 202, 103);
     grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .right {
@@ -44,6 +44,7 @@ img {
     margin: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
 }
 
 .card {
@@ -53,9 +54,36 @@ img {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    transition: scale, 1s, ease-out, 0.25s;
+    transition: ease-out, 0.25s;
 }
 
 .card:hover {
     transform: scale(1.02);
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.project-card {
+    border-radius: 10px;
+    border: 3px solid purple;
+    text-align: center;
+    transition: ease-out, 0.25s;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-card h4 {
+    border-bottom: 3px solid purple;
+}
+
+.project-card p {
+    margin: 0.5rem;
 }
