@@ -5,35 +5,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>My Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/icon.png">
     </head>
     <body>
         <nav>
-            <a href="#about-me">About me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
+            <div class="nav-grid">
+                <h1>Fahim Ahmed</h1>
+                <div class="nav-flex">
+                    <a href="#about-me">About me</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                </div>
+            </div>
         </nav>
         <div id="about-me" class="about-me">
-            <img src="assets/account-tie.svg">
+            <img src="assets/photo.jpg" class="round">
             <div class="right">
-                <h1>Hello!</h1>
-                <h1>My name is Fahim Ahmed</h1>
-                <p>I am a website developer and also a first class graduate in BSc Computer Science</p>
+                <h1 class="header"><u>About me</u></h1>
+                <p>I am <strong>Computer Science</strong> graduate with a <strong>First Class Honours</strong></p>
                 <p>
-                    Through my Computer Science degree, I have learnt many concepts about coding and 
-                    creating apps and websites that are aesthetically pleasing.
-                    I am following the course The Odin Project to help me learn JavaScript.
-                    At university, I have learnt various languages such as Java, PHP, JavaScript and so on.
-                    I was also taught to work in a team through an Agile methodology as the industry, 
-                    most often, has different teams working on frontend and backend.
+                    Through my Computer Science degree, I have learnt many coding practices and concepts, such 
+                    as MVC framework and the Agile methodology. I have led a team as a Scrum master for a 
+                    university project.
+                </p>
+                <p>
+                    At university, I have learnt various programming languages such as Java, PHP, JavaScript.
+                    I have utilised SQL for data storage and built applications that combine front-end, back-end,
+                    and databases.
+                    Outside of university, I have developed web applications using C#, React.js, Express.js and 
+                    MongoDB.
                 </p>
             </div>
         </div>
         <div id="skills" class="skills">
-            <h2>Skills</h2>
-            <h4>In my learning journey, I was able to acquire important skills such as: </h4>
+            <h1 class="header"><u>Skills</u></h1>
             <div class="card">
                 <h4>Git</h4>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" />
+            </div>
+            <div class="card">
+                <h4>C#</h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
             </div>
             <div class="card">
                 <h4>Java</h4>
@@ -85,11 +97,10 @@
             </div>
         </div>
         <div id="projects" class="projects">
-            <h2>Projects</h2>
-            <h4>
-                During my time at university, I have completed many projects in different programming languages.
-                Some of them can be found my <a href="https://github.com/fahime10">GitHub</a>.
-            </h4>
+            <h1><u>Projects</u></h1>
+            <a href="https://github.com/fahime10/">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            </a>
             <div class="project-card">
                 <h4>Waterflow Project: Final Year at university</h4>
                 <p>
@@ -123,12 +134,13 @@
                 <h4>JavaFX university assignment</h4>
                 <p>
                     This project involved the use of Java and utilises JavaFX to produce graphical outputs.
-                    The purpose of the app was to simulate a module chooser for students who needed to select final 
+                    The purpose of the app was to simulate a module picker for students who needed to select final 
                     year modules.
                     The app allows the student to sign in on the first page, then select modules for both first and 
                     second term (there is a limit based on credits).
                     Students must also pick reserve modules on the third page. 
                     On the fourth page is the summary of the student's details, the first choice modules and reserve modules.
+                    The code can be found <a href="https://github.com/fahime10/ModuleChooserJavaFX">here</a>.
                 </p>
             </div>
             <div class="project-card">
@@ -142,19 +154,20 @@
                 </p>
             </div>
             <div class="project-card">
-                <h4>Inventory Application</h4>
+                <h4>Finance Management App</h4>
                 <p>
-                    This project involved the use of NodeJS, specifically using the Express framework. 
-                    The product is a website that allows the user to select a musical instrument category and then 
-                    find all the relevant instruments related to that category.
-                    The application uses MongoDB as the database to find, create, update and delete the documents.
-                    The code can be found <a href="https://github.com/fahime10/cv-project">here</a>.
+                    This project involved the use of C# for front-end and back-end, and an SQL Database server.
+                    The application integrates a robust authentication system, where passwords are saved as a hash
+                    for security purposes, and enables the user to save information about their incomes, expenses
+                    and current month's budget. The application provides a section to monitor the current year's expenses.
+                    The code can be found <a href="https://github.com/fahime10/FinanceManagementApp">here</a>.
                 </p>
             </div>
         </div>
         <footer>
-            Developed by Fahim Ahmed
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            <a href="https://github.com/fahime10/">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            </a>
         </footer>
     </body>
 </html>
